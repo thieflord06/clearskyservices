@@ -10,6 +10,11 @@ URL: `https://api.clearsky.services`
 - **501:** Not Implemented
 - **503:** Service Unavailable
 
+## Rate Limiting:
+- **Requests:** 5 per second
+
+## Endpoints:
+
 ## 1.
 
 - **Endpoint:** `/api/v1/anon/get-did/<handle>`
