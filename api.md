@@ -1,5 +1,7 @@
 # API Documentation
 
+URL: `https://api.clearsky.services`
+
 ## Response Errors:
 - **400:** Bad Request
 - **404:** Not Found
