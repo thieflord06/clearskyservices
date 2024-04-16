@@ -2,7 +2,7 @@
 
 URL: `https://api.clearsky.services`
 
-## Response Errors:
+## Response Errors
 - **400:** Bad Request
 - **404:** Not Found
 - **423:** Locked
@@ -10,10 +10,17 @@ URL: `https://api.clearsky.services`
 - **501:** Not Implemented
 - **503:** Service Unavailable
 
-## Rate Limiting:
+## Rate Limiting
+
+Anonymous endpoints:
 - **Requests:** 5 per second
 
-## Endpoints:
+Authenticated endpoints:
+- **Requests:** 30 per second
+
+## Endpoints
+
+## Anonymous:
 
 ## 1.
 
@@ -92,3 +99,7 @@ URL: `https://api.clearsky.services`
                 },
             "identity":"thieflord.dev"
         }
+
+## Authenticated:
+
+For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
