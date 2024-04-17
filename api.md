@@ -28,17 +28,18 @@ Authenticated endpoints:
 - **Method:** `GET`
 - **Description:** Get the DID of a given handle
 - **Parameters:** handle
-- **Response:**
-    ```json
-        {
-            "data":
-                {
-                    "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
-                    "did_identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
-                    "identifier":"rudyfraser.com",
-                    "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
-                }
-        }
+  - **Response:**
+      ```json
+          {
+              "data":
+                  {
+                      "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
+                      "did_identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
+                      "identifier":"rudyfraser.com",
+                      "PDS": "https://shiitake.us-east.host.bsky.network",
+                      "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
+                  }
+          }
 
 #### 2.
 
@@ -46,17 +47,18 @@ Authenticated endpoints:
 - **Method:** `GET`
 - **Description:** Get the handle of a given DID
 - **Parameters:** DID
-- **Response:**
-    ```json
-        {
-            "data":
-                {
-                    "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
-                    "handle_identifier":"rudyfraser.com",
-                    "identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
-                    "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
-                }
-        }
+  - **Response:**
+      ```json
+          {
+              "data":
+                  {
+                      "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
+                      "handle_identifier":"rudyfraser.com",
+                      "identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
+                      "PDS": "https://shiitake.us-east.host.bsky.network",
+                      "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
+                  }
+          }
 
 #### 3.
 
