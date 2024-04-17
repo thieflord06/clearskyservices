@@ -13,16 +13,16 @@ URL: `https://api.clearsky.services`
 ## Rate Limiting
 
 Anonymous endpoints:
-- **Requests:** 5 per second
+- **Limits:** 5 requests per second
 
 Authenticated endpoints:
-- **Requests:** 30 per second
+- **Limits:** 30 requests per second
 
 ## Endpoints
 
-## Anonymous:
+### Anonymous:
 
-## 1.
+#### 1.
 
 - **Endpoint:** `/api/v1/anon/get-did/<handle>`
 - **Method:** `GET`
@@ -40,7 +40,7 @@ Authenticated endpoints:
                 }
         }
 
-## 2.
+#### 2.
 
 - **Endpoint:** `/api/v1/anon/get-handle/<did>`
 - **Method:** `GET`
@@ -58,7 +58,7 @@ Authenticated endpoints:
                 }
         }
 
-## 3.
+#### 3.
 
 - **Endpoint:** `/api/v1/anon/total-users`
 - **Method:** `GET`
@@ -84,7 +84,7 @@ Authenticated endpoints:
                 }
         }
 
-## 4.
+#### 4.
 
 - **Endpoint:** `/api/v1/anon/validation/validate-handle/<handle>`
 - **Method:** `GET`
@@ -100,6 +100,6 @@ Authenticated endpoints:
             "identity":"thieflord.dev"
         }
 
-## Authenticated:
+### Authenticated:
 
 For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
