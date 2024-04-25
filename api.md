@@ -101,7 +101,40 @@ Authenticated endpoints:
                 },
             "identity":"thieflord.dev"
         }
+  
+#### 5.
 
+- **Endpoint:** `/api/v1/anon/data-transaction/query`
+- **Method:** `GET`
+- **Description:** Query available lists of fedi data
+- **Parameters:** list: bool
+- **Response:**
+    ```json
+        {
+            "data": 
+                {
+                    "dni.csv": 
+                        {
+                            "Appeal": "not obvious",
+                            "Author": "IFTAS",
+                            "Description": "IFTAS do not interact list as of April 23",
+                            "List Type": "domain"
+                        },
+                    "export_block.csv": 
+                        {
+                            "Appeal": "N/a",
+                            "Author": "Spreadi12",
+                            "Description": "N/a"
+                        },
+                    "gardenfence-mastodon-csv.csv": 
+                        {
+                            "Appeal": "DM me @chumbucket",
+                            "Author": "Shadowbox",
+                            "Description": "A list of users that belong under the bus"
+                      }
+                }
+        }
+  
 ### Authenticated:
 
 For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
