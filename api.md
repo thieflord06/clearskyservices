@@ -5,6 +5,8 @@ URL: `https://api.clearsky.services`
 ## Response Errors
 - **400:** Bad Request
 - **404:** Not Found
+- **409:** Conflict
+- **413** Payload Too Large
 - **423:** Locked
 - **500:** Internal Server Error
 - **501:** Not Implemented
@@ -134,7 +136,26 @@ Authenticated endpoints:
                           }
                     }
             }
-  
+
+#### 6.
+
+- **Endpoint:** `/api/v1/anon/data-transaction/receive`
+  - **Method:** `POST`
+    - **Description:** Upload a file
+    - **Parameters:** author: str, appealsProcess: str, listType: str, filename: str, description: str
+    - **Limitations:** File Size 1MB, File Type: CSV, author 100 characters, appealsProcess 500 characters, listType 100 characters, filename 100 characters, description 300 characters
+    - **Response:** File
+
+#### 7.
+
+- **Endpoint:** `/api/v1/anon/data-transaction/retrieve`
+  - **Method:** `GET`
+    - **Description:** Download a file
+    - **Parameters:** retrieveLists: bool, file: str
+      - **Response:**
+          ```json
+              {"message": "File received and processed successfully"}
+
 ### Authenticated:
 
 For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
