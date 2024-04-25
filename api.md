@@ -25,115 +25,115 @@ Authenticated endpoints:
 #### 1.
 
 - **Endpoint:** `/api/v1/anon/get-did/<handle>`
-- **Method:** `GET`
-- **Description:** Get the DID of a given handle
-- **Parameters:** handle
-  - **Response:**
-      ```json
-          {
-              "data":
-                  {
-                      "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
-                      "did_identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
-                      "identifier":"rudyfraser.com",
-                      "pds": "https://shiitake.us-east.host.bsky.network",
-                      "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
-                  }
-          }
+  - **Method:** `GET`
+    - **Description:** Get the DID of a given handle
+    - **Parameters:** handle
+    - **Response:**
+        ```json
+            {
+                "data":
+                    {
+                        "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
+                        "did_identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
+                        "identifier":"rudyfraser.com",
+                        "pds": "https://shiitake.us-east.host.bsky.network",
+                        "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
+                    }
+            }
 
 #### 2.
 
 - **Endpoint:** `/api/v1/anon/get-handle/<did>`
-- **Method:** `GET`
-- **Description:** Get the handle of a given DID
-- **Parameters:** DID
-  - **Response:**
-      ```json
-          {
-              "data":
-                  {
-                      "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
-                      "handle_identifier":"rudyfraser.com",
-                      "identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
-                      "pds": "https://shiitake.us-east.host.bsky.network",
-                      "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
-                  }
-          }
+  - **Method:** `GET`
+    - **Description:** Get the handle of a given DID
+    - **Parameters:** DID
+    - **Response:**
+        ```json
+            {
+                "data":
+                    {
+                        "avatar_url":"https://cdn.bsky.app/img/avatar/plain/did:plc:w4xbfzo7kqfes5zb7r6qv3rw/bafkreicbh2mxpza6xhdwfwdvro33jlioue3g4elfp75u3je64dbvjk44la",
+                        "handle_identifier":"rudyfraser.com",
+                        "identifier":"did:plc:w4xbfzo7kqfes5zb7r6qv3rw",
+                        "pds": "https://shiitake.us-east.host.bsky.network",
+                        "user_url":"https://bsky.app/profile/did:plc:w4xbfzo7kqfes5zb7r6qv3rw"
+                    }
+            }
 
 #### 3.
 
 - **Endpoint:** `/api/v1/anon/total-users`
-- **Method:** `GET`
-- **Description:** Get user count information: total users, active users, deleted users
-- **Parameters:** none
-- **Response:**
-    ```json
-        {
-            "data":
-                {
-                    "active_count":
-                        {
-                            "displayname":"Active Users","value":"5,506,791"
-                        },
-                    "deleted_count":
-                        {
-                            "displayname":"Deleted Users","value":"394,545"
-                        },
-                    "total_count":
-                        {
-                            "displayname":"Total Users","value":"5,901,336"
-                        }
-                }
-        }
+  - **Method:** `GET`
+    - **Description:** Get user count information: total users, active users, deleted users
+    - **Parameters:** none
+    - **Response:**
+        ```json
+            {
+                "data":
+                    {
+                        "active_count":
+                            {
+                                "displayname":"Active Users","value":"5,506,791"
+                            },
+                        "deleted_count":
+                            {
+                                "displayname":"Deleted Users","value":"394,545"
+                            },
+                        "total_count":
+                            {
+                                "displayname":"Total Users","value":"5,901,336"
+                            }
+                    }
+            }
 
 #### 4.
 
 - **Endpoint:** `/api/v1/anon/validation/validate-handle/<handle>`
-- **Method:** `GET`
-- **Description:** Validate a handle
-- **Parameters:** handle
-- **Response:**
-    ```json
-        {
-            "data":
-                {
-                    "valid":"true"
-                },
-            "identity":"thieflord.dev"
-        }
+  - **Method:** `GET`
+    - **Description:** Validate a handle
+    - **Parameters:** handle
+    - **Response:**
+        ```json
+            {
+                "data":
+                    {
+                        "valid":"true"
+                    },
+                "identity":"thieflord.dev"
+            }
   
 #### 5.
 
 - **Endpoint:** `/api/v1/anon/data-transaction/query`
-- **Method:** `GET`
-- **Description:** Query available lists of fedi data
-- **Parameters:** list: bool
-- **Response:**
-    ```json
-        {
-            "data": 
-                {
-                    "dni.csv": 
-                        {
-                            "Appeal": "not obvious",
-                            "Author": "IFTAS",
-                            "Description": "IFTAS do not interact list as of April 23",
-                            "List Type": "domain"
-                        },
-                    "export_block.csv": 
-                        {
-                            "Appeal": "N/a",
-                            "Author": "Spreadi12",
-                            "Description": "N/a"
-                        },
-                    "gardenfence-mastodon-csv.csv": 
-                        {
-                            "Appeal": "DM me @chumbucket",
-                            "Author": "Shadowbox",
-                            "Description": "A list of users that belong under the bus"
-                      }
-                }
-        }
+  - **Method:** `GET`
+    - **Description:** Query available lists of fedi data
+    - **Parameters:** list: bool
+    - **Response:**
+        ```json
+            {
+                "data": 
+                    {
+                        "dni.csv": 
+                            {
+                                "Appeal": "not obvious",
+                                "Author": "IFTAS",
+                                "Description": "IFTAS do not interact list as of April 23",
+                                "List Type": "domain"
+                            },
+                        "export_block.csv": 
+                            {
+                                "Appeal": "N/a",
+                                "Author": "Spreadi12",
+                                "Description": "N/a"
+                            },
+                        "gardenfence-mastodon-csv.csv": 
+                            {
+                                "Appeal": "DM me @chumbucket",
+                                "Author": "Shadowbox",
+                                "Description": "A list of users that belong under the bus"
+                          }
+                    }
+            }
   
 ### Authenticated:
 
