@@ -4,7 +4,7 @@ This Application provides information from Bluesky using ATProto.
 
 ## Table of contents
 
-- [Usage](#usage)
+- [Usage](api.md)
 
 ## Usage
 
