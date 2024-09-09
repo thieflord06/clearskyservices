@@ -514,7 +514,15 @@ Authenticated endpoints:
                         "identifier":"rudyfraser.com"
                     }
             }
-      
+
+### 15.
+
+- **Endpoint:** `/api/v1/anon/images/logo`
+  - **Method:** `GET`
+    - **Description:** Get the logo image
+    - **Parameters:** None
+    - **Response:** png
+
 ### Authenticated:
 
 For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
