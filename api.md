@@ -68,25 +68,26 @@ Authenticated endpoints:
   - **Method:** `GET`
     - **Description:** Get user count information: total users, active users, deleted users
     - **Parameters:** none
-    - **Response:**
-        ```json
-            {
-                "data":
-                    {
-                        "active_count":
-                            {
-                                "displayname":"Active Users","value":"5,506,791"
-                            },
-                        "deleted_count":
-                            {
-                                "displayname":"Deleted Users","value":"394,545"
-                            },
-                        "total_count":
-                            {
-                                "displayname":"Total Users","value":"5,901,336"
-                            }
-                    }
-            }
+      - **Response:**
+          ```json
+              { 
+                  "as of":"2024-04-15T12:59:08.467076",
+                      "data":
+                          {
+                              "active_count":
+                                  {
+                                      "displayname":"Active Users","value":"5,506,791"
+                                  },
+                              "deleted_count":
+                                  {
+                                      "displayname":"Deleted Users","value":"394,545"
+                                  },
+                              "total_count":
+                                  {
+                                      "displayname":"Total Users","value":"5,901,336"
+                                  }
+                          }
+              }
 
 #### 4.
 
