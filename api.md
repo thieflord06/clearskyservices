@@ -526,12 +526,26 @@ Authenticated endpoints:
 
 ### 16.
 
-- **Endpoint:** `/api/v1/anon/images/icon`
+- **Endpoint:** `/api/v1/anon/status/time-behind`
   - **Method:** `GET`
-    - **Description:** Get the icon image
+    - **Description:** Get the time behind status of clearsky data
     - **Parameters:** None
-    - **Response:** png
-
+      - **Response:**
+        ```json
+            {
+                "data": 
+                    {
+                        "time behind": "18 hours 58 minutes"
+                    }
+            }
+        
+            {
+                "data": 
+                    {
+                        "time behind": "in sync"
+                    }
+            }
+        
 ### Authenticated:
 
 For information about authenticated endpoints please contact us at [support@clearsky.app](mailto:support@clearsky.app)
