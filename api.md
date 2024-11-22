@@ -2,6 +2,8 @@
 
 URL: `https://api.clearsky.services`
 
+status: `https://status.clearsky.app`
+
 ## Response Errors
 - **400:** Bad Request
 - **404:** Not Found
